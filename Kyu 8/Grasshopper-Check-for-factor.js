@@ -8,4 +8,4 @@ For example, when the input is green, output should be yellow.
 function checkForFactor (base, factor) {
     // code here
     return base % factor === 0 ? true : false
-  }
+}

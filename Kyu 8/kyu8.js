@@ -216,3 +216,107 @@ function noSpace(x){
     x = x.filter( item => item !== ' ' )//filter out empty strings from the array
     return x.join('')//join back to form string
 }
+
+
+// write me a function stringy that takes a size and returns a string of alternating '1s' and '0s'.
+// the string should start with a 1.
+// a string with size 6 should return :'101010'.
+// with size 4 should return : '1010'.
+// with size 12 should return : '101010101010'.
+// The size will always be positive and will only use whole numbers.
+function stringy(size) {
+    // your code here   
+    let output = ''
+    for(let i = 1; i <= size; i++) {
+      if( i === 0) {
+        output += '1'
+      }else if( i % 2 !== 0 ) {
+        output += '1'
+      }else if( i % 2 === 1){
+        output += '1'
+      }else {
+        output += '0'
+      } 
+    }
+    return output
+}
+
+
+//   Your coworker was supposed to write a simple helper function to capitalize a string (that contains a single word) before they went on vacation.
+//   Unfortunately, they have now left and the code they gave you doesn't work. Fix the helper function they wrote so that it works as intended (i.e. make the first character in the string "word" upper case).
+//   Don't worry about numbers, special characters, or non-string types being passed to the function. The string lengths will be from 1 character up to 10 characters, but will never be empty.
+function capitalizeWord(word) {
+    return word.split('').map( (item, index, arr) => index === 0 ? item.toUpperCase() : item = item ).join("")
+}
+
+
+// Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty ( zero length ).
+// Hint for R users:
+// The length of string is not always the same as the number of characters
+// For example: (Input1, Input2) --> output
+// ("1", "22") --> "1221"
+// ("22", "1") --> "1221"
+function solution(a, b){
+    // your code here
+    return a.length > b.length ? `${b}${a}${b}` : `${a}${b}${a}`
+}
+
+
+// Write a function that returns a string in which firstname is swapped with last name.
+function nameShuffler(str){
+    //Shuffle It
+    return str.split(" ").reverse().join(" ")
+}
+
+
+// Make multiple functions that will return the sum, difference, modulus, product, quotient, and the exponent respectively.
+// Please use the following function names:
+// addition = add
+// multiply = multiply
+// division = divide (both integer and float divisions are accepted)
+// modulus = mod
+// exponential = exponent
+// subtraction = subt
+function add(a,b){
+    return a + b
+}
+
+function divide(a,b){
+    return a / b
+}
+
+function multiply(a,b){
+    return a * b
+}
+
+function mod(a,b){
+    return a % b
+}
+   
+function exponent(a,b){
+    return a ** b
+}
+    
+function subt(a,b){
+    return a - b
+}
+
+
+// There was a test in your class and you passed it. Congratulations!
+// But you're an ambitious person. You want to know if you're better than the average student in your class.
+// You receive an array with your peers' test scores. Now calculate the average and compare your score!
+// Return True if you're better, else False!
+function betterThanAverage(classPoints, yourPoints) {
+    // Your code here
+    let average = (classPoints.reduce( (acc,c) => acc + c, 0 )) / classPoints.length
+      return yourPoints > average ? true : false
+  
+}
+
+
+//Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
+function betterThanAverage(classPoints, yourPoints) {
+    // Your code here
+    let average = (classPoints.reduce( (acc,c) => acc + c, 0 )) / classPoints.length
+      return yourPoints > average ? true : false  
+}

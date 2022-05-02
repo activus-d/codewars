@@ -3,4 +3,4 @@ String will never be empty and you do not need to account for different data typ
 function findShort(s){
     let lengthOfWords = s.split(' ').map( item => item = item.length ).sort( (a,b) => a - b )
     return lengthOfWords[0]
-  }
+}

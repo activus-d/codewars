@@ -18,4 +18,4 @@ six_toast(12) == 6
 function sixToast(num) {
     // you code here
     return num <= 6 ? 6 - num : num > 6 ? num - 6 : ''
-  }
+}

@@ -6,7 +6,6 @@ Examples (Input -- => Output):
 "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrstuvwxyz"
 */
 function sortGiftCode(code){
-    //TODO 
     //make string into array of strings
     code = code.split('');
     //sort array

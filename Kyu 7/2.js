@@ -5,6 +5,5 @@ getEvenNumbers([2,4,5,6]) // should == [2,4,6]
 */
 function getEvenNumbers(numbersArray){
     return ( numbersArray.filter( item => item % 2 === 1 ) ) === numbersArray ? [] :
-    ( numbersArray.filter( item => item % 2 === 0 ) )
-    // filter out the odd numbers
+    ( numbersArray.filter( item => item % 2 === 0 ) ) // filter out the odd numbers
 }

@@ -6,6 +6,7 @@ Add them all together.
 Take the square root of the result.
 Divide by two.
 Example
+
 predictAge(65, 60, 75, 55, 60, 63, 64, 45) === 86
 */
 function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){

@@ -53,5 +53,3 @@ function isCoprime(x, y) {
     // console.log(check)
     return check[check.length -1] === 1
 }
-isCoprime(12, 39)
-isCoprime(20, 27)

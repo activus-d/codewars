@@ -4,7 +4,6 @@ You are given a list of unique integers arr, and two integers a and b. Your task
 It is guaranteed that a and b are both present in arr.
 */
 function consecutive(arr, a, b) {
-    // Your code here...
     const indexA = arr.indexOf(a)
     const indexB = arr.indexOf(b)
     return indexB === indexA + 1 || indexB === indexA - 1 ? true : false
